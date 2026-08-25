@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="CinemaTicketReservation.Tests/CinemaTicketReservation.Tests.csproj" />
+  <Project Path="CinemaTicketReservation/CinemaTicketReservation.csproj" />
+</Solution>

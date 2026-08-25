@@ -1,0 +1,59 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+}
+
+main {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.player,
+.game,
+.leaderboard {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#gameArea {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #ddd;
+    font-size: 28px;
+    cursor: pointer;
+    user-select: none;
+}
+
+    #gameArea.waiting {
+        background: #e0b83f;
+    }
+
+    #gameArea.ready {
+        background: #53c66b;
+    }
+
+    #gameArea.tooEarly {
+        background: #d85c5c;
+    }

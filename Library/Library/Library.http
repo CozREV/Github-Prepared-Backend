@@ -1,0 +1,7 @@
+POST https://localhost:7204/loans
+Content-Type: application/json
+
+{
+    "bookId": 2,
+    "userName": "Grace"
+}

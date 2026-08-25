@@ -1,0 +1,13 @@
+﻿@baseUrl = http://localhost:5000
+
+### Hent leaderboard
+GET {{baseUrl}}/scores
+
+### Registrer resultat
+POST {{baseUrl}}/scores
+Content-Type: application/json
+
+{
+  "playerName": "Kristian",
+  "milliseconds": 245
+}
