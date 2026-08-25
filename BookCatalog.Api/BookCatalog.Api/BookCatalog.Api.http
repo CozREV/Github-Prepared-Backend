@@ -1,0 +1,26 @@
+@baseUrl = https://localhost:7019
+
+
+### Hent alle bøker
+
+GET {{baseUrl}}/books
+
+
+### Hent bok med id 1
+
+GET {{baseUrl}}/books/1
+
+
+### Bok som ikke finnes
+
+GET {{baseUrl}}/books/999
+
+
+### Finn bøker av Ada
+
+GET {{baseUrl}}/books?author=Ada
+
+
+### Forfatter som ikke finnes
+
+GET {{baseUrl}}/books?author=Nobody
