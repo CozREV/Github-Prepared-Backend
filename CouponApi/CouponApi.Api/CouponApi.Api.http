@@ -1,0 +1,29 @@
+@baseUrl = http://localhost:5090
+
+### Hent alle kuponger
+GET {{baseUrl}}/coupons
+
+### Hent én kupong
+GET {{baseUrl}}/coupons/1
+
+### Bruk en kupong
+POST {{baseUrl}}/coupons/1/use
+
+### Deaktiver en kupong
+PATCH {{baseUrl}}/coupons/2/deactivate
+
+### Prøv å bruke den deaktiverte kupongen
+POST {{baseUrl}}/coupons/2/use
+
+### Opprett en ny kupong
+POST {{baseUrl}}/coupons
+Content-Type: application/json
+
+{
+  "code": "BLACKFRIDAY",
+  "description": "Black Friday-kampanje",
+  "remainingUses": 50
+}
+
+### Slett en kupong
+DELETE {{baseUrl}}/coupons/3
