@@ -1,0 +1,10 @@
+@baseUrl = https://localhost:7267
+
+### Alle visninger
+GET {{baseUrl}}/screenings
+
+### Visning med reservasjoner
+GET {{baseUrl}}/screenings/1
+
+### Visning uten reservasjoner (bytt tallet til en id du vet mangler reservasjoner)
+GET {{baseUrl}}/screenings/1
